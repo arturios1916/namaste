@@ -1,0 +1,6 @@
+mixin blockHead(subcaption,caption,tagline,blockname)
+    .row
+        .col.align-items-center.d-flex.flex-column
+            h3(class=blockname+'__subcaption')=subcaption
+            h1(class=blockname+'__caption')=caption
+            h2(class=blockname+'__tagline')=tagline

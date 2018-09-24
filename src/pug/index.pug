@@ -1,0 +1,25 @@
+include ./mixin/_mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title NAMASTE
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="./js/plugins/owlcarousel2.3.4/owl.carousel.min.css")
+        link(rel="stylesheet", href="./js/plugins/owlcarousel2.3.4/owl.theme.default.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans:400,700" rel="stylesheet")
+        link( rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous")
+    body
+        include ./blocks/_head
+        include ./blocks/_about
+        include ./blocks/_portfolio
+        include ./blocks/_blog
+        .download
+            .container
+                .row.justify-content-center
+                    h2.download__text Dowload this awesome PSD template for free
+        include ./blocks/_footer
+        include ./_plugins

@@ -1,0 +1,9 @@
+mixin Card(img,caption,description,link,date,blockName)
+    div(class=blockName+'-card')
+        img(class=blockName+'-card__img', src=img)
+        div(class=blockName+'-card__hover')
+            h2(class=blockName+'-card__caption')=caption
+            span(class=blockName+'-card__description')=description
+            span(class=blockName+'card__date')=date
+            a(class=blockName+'-card__link', href=link)
+                img(class=blockname+'-card__link'+''+blockName+'__link--image', src='./img/portfolio/right.png')
