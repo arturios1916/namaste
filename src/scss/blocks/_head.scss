@@ -5,8 +5,10 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 180px;
+    z-index: 3;
+    padding: 0;
     &__item{
         margin-right: 20px;
         margin-left: 20px;
@@ -22,4 +24,80 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400;
+    color: $c-head;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: black;
+        opacity: 0.8;
+        z-index: 2;
+    }
+    &__wrapper{
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__subcaption{
+        text-align: center;
+    }
+    &__ico{
+        &--wrapper{
+            position: relative;
+            &::before{
+                content: '';
+                height: 1px;
+                width: 26px;
+                position: absolute;
+                left: -50px;
+                bottom: 12px;
+                background-color: $c-head;
+                z-index: 3;
+            }
+            &::after{
+                content: '';
+                height: 1px;
+                width: 26px;
+                position: absolute;
+                left: 45px;
+                bottom: 12px;
+                background-color: $c-head;
+                z-index: 3;
+            }
+        }
+    }
+    &__text{
+        font-family: 'Montserrat';
+        font-size: 38px;
+        font-weight: 400;
+        margin: 25px 20px 25px 20px;
+        &--side{
+            font-family: "Myriad Pro";
+            font-size: 14px;
+            font-weight: 400;
+            color: $c-head;
+            margin: 0;
+        }
+    }
+    &__tagline{
+        font-family: "Myriad Pro";
+        font-size: 9px;
+        font-weight: 400;
+        margin: 0;
+    }
+    &__mouse{
+        margin-top: 110px;
+        margin-bottom: 120px;
+    }
 }
+

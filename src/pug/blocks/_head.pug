@@ -4,11 +4,13 @@ section.head
             .col.align-items-center.d-flex.flex-column
                 .row
                     include _menu.pug
-                .head__wrappper
+                .head__wrapper
                     h2.head__subcaption MADE IN AMERICA
-                    img.head__ico(src='./img/hourse.png')
-                    .row
+                    .head__ico.head__ico--wrapper
+                        img.head__ico(src='./img/hourse.png')
+                    .row.align-items-center
                         h2.head__text.head__text--side ESTD
                         h1.head__text NAMASTE
                         h2.head__text.head__text--side 2001
                     h3.head__tagline See the world, find yourself
+                    img.head__mouse(src='./img/head/mouse.png')
