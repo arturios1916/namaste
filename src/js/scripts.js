@@ -5,6 +5,6 @@ $(document).ready(function(){
     
     });
     $(".head__subcaption").arctext({
-        radius: 200,
+        radius: 250,
     })
   });

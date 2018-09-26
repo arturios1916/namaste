@@ -1,0 +1,80 @@
+.about{
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    text-align: center;
+    &__subcaption{
+        font-size: 12px;
+        font-weight: 700;
+        color: $c-third;
+        line-height: 2.5;
+    }
+    &__caption{
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 3pt;
+        color: $c-primary
+    }
+    &__tagline{
+        font-family: 'PT Sans';
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 530px;
+        color: $c-seconary;
+    }
+    &__cardwrap{
+        margin-top: 105px;
+    }
+}
+
+.about-card{
+    background-color: $c-card;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    height: 100%;
+    border: 1px solid #ececec;
+    transition: .5s ease-in-out;
+    &__imgwrap{
+        padding-top: 55px;
+        padding-bottom: 55px;
+        height: 65px;
+    }
+    &__caption{
+        margin: 0;
+        display: block;
+        font-size: 21px;
+        color: $c-cardText;
+        transition: .5s ease-in-out;
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: .5s ease-in-out;
+    }
+    &__description{
+        display: block;
+        font-family: 'PT Sans';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.6;
+        color: $c-footer;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-transform: none;
+        transition: .5s ease-in-out;
+    }
+    &:hover{
+        background-color: $c-primary;
+        h2, span{
+            color:white;
+        }
+        img{
+            filter:invert(1);
+            transform: scale(1.5)
+        }
+    }
+}

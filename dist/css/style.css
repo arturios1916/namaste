@@ -2933,7 +2933,10 @@ template {
     -ms-flex-align: center;
     align-items: center; }
   .head__subcaption {
-    text-align: center; }
+    text-align: center;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400; }
   .head__ico--wrapper {
     position: relative; }
     .head__ico--wrapper::before {
@@ -2974,6 +2977,93 @@ template {
     margin-top: 110px;
     margin-bottom: 120px; }
 
+.about {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  text-align: center; }
+  .about__subcaption {
+    font-size: 12px;
+    font-weight: 700;
+    color: #898f99;
+    line-height: 2.5; }
+  .about__caption {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 3pt;
+    color: #ed685a; }
+  .about__tagline {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 530px;
+    color: #999; }
+  .about__cardwrap {
+    margin-top: 105px; }
+
+.about-card {
+  background-color: #f7f7f7;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  height: 100%;
+  border: 1px solid #ececec;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out; }
+  .about-card__imgwrap {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    height: 65px; }
+  .about-card__caption {
+    margin: 0;
+    display: block;
+    font-size: 21px;
+    color: #1b1b1b;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .about-card__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .about-card__description {
+    display: block;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #777;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: none;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; }
+  .about-card:hover {
+    background-color: #ed685a; }
+    .about-card:hover h2, .about-card:hover span {
+      color: white; }
+    .about-card:hover img {
+      -webkit-filter: invert(1);
+      filter: invert(1);
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5); }
+
 @font-face {
   font-family: 'Myriad Pro';
   src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
@@ -2985,3 +3075,7 @@ template {
   src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
+
+.section-margin {
+  padding-top: 140px;
+  padding-bottom: 140px; }
