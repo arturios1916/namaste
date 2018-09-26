@@ -2887,13 +2887,14 @@ template {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 70px;
-  margin-bottom: 180px;
+  margin-top: 68px;
+  margin-bottom: 176px;
   z-index: 3;
-  padding: 0; }
+  padding: 0;
+  letter-spacing: 1.5px; }
   .nav__item {
-    margin-right: 20px;
-    margin-left: 20px; }
+    margin-right: 19px;
+    margin-left: 19px; }
   .nav__link {
     text-decoration: none;
     color: #f0f0f0; }
@@ -2936,7 +2937,9 @@ template {
     text-align: center;
     font-family: "Myriad Pro";
     font-size: 14px;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 12px 0 12px 0; }
   .head__ico--wrapper {
     position: relative; }
     .head__ico--wrapper::before {
@@ -2944,8 +2947,8 @@ template {
       height: 1px;
       width: 26px;
       position: absolute;
-      left: -50px;
-      bottom: 12px;
+      left: -36px;
+      bottom: 11px;
       background-color: #f0f0f0;
       z-index: 3; }
     .head__ico--wrapper::after {
@@ -2953,28 +2956,48 @@ template {
       height: 1px;
       width: 26px;
       position: absolute;
-      left: 45px;
-      bottom: 12px;
+      left: 30px;
+      bottom: 11px;
       background-color: #f0f0f0;
       z-index: 3; }
   .head__text {
     font-family: 'Montserrat';
     font-size: 38px;
-    font-weight: 400;
-    margin: 25px 20px 25px 20px; }
-    .head__text--side {
+    font-weight: 500;
+    margin-top: 13px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    letter-spacing: .5px;
+    position: relative; }
+    .head__text::before {
+      content: 'ESTD';
       font-family: "Myriad Pro";
       font-size: 14px;
       font-weight: 400;
       color: #f0f0f0;
-      margin: 0; }
+      margin: 0;
+      position: absolute;
+      left: -40px;
+      bottom: 9px; }
+    .head__text::after {
+      content: '2001';
+      font-family: "Myriad Pro";
+      font-size: 14px;
+      font-weight: 400;
+      color: #f0f0f0;
+      margin: 0;
+      position: absolute;
+      left: 225px;
+      bottom: 13.5px; }
   .head__tagline {
     font-family: "Myriad Pro";
     font-size: 9px;
     font-weight: 400;
-    margin: 0; }
+    margin: 0;
+    padding-left: 21.5px;
+    letter-spacing: 1px; }
   .head__mouse {
-    margin-top: 110px;
+    margin-top: 106px;
     margin-bottom: 120px; }
 
 .about {
@@ -2985,20 +3008,27 @@ template {
     font-size: 12px;
     font-weight: 700;
     color: #898f99;
-    line-height: 2.5; }
+    margin: 0;
+    padding-top: 2px;
+    padding-left: 20px;
+    letter-spacing: 4.5px; }
   .about__caption {
     font-size: 48px;
     font-weight: 500;
-    letter-spacing: 3pt;
-    color: #ed685a; }
+    letter-spacing: 4pt;
+    color: #ed685a;
+    margin-top: 24px;
+    margin-bottom: 12px; }
   .about__tagline {
     font-family: 'PT Sans';
     font-size: 18px;
     font-weight: 400;
     max-width: 530px;
-    color: #999; }
+    color: #999;
+    line-height: 1.7;
+    letter-spacing: 1.2px; }
   .about__cardwrap {
-    margin-top: 105px; }
+    margin-top: 84px; }
 
 .about-card {
   background-color: #f7f7f7;
@@ -3020,7 +3050,8 @@ template {
   border: 1px solid #ececec;
   -webkit-transition: .5s ease-in-out;
   -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out; }
+  transition: .5s ease-in-out;
+  margin: 0; }
   .about-card__imgwrap {
     padding-top: 55px;
     padding-bottom: 55px;

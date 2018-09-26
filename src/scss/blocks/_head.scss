@@ -5,13 +5,14 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 70px;
-    margin-bottom: 180px;
+    margin-top: 68px;
+    margin-bottom: 176px;
     z-index: 3;
     padding: 0;
+    letter-spacing: 1.5px;
     &__item{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 19px;
+        margin-left: 19px;
     }
     &__link{
         text-decoration: none;
@@ -53,6 +54,8 @@
         font-family: "Myriad Pro";
         font-size: 14px;
         font-weight: 400;
+        letter-spacing: 2px;
+        margin: 12px 0 12px 0;
     }
     &__ico{
         &--wrapper{
@@ -62,8 +65,8 @@
                 height: 1px;
                 width: 26px;
                 position: absolute;
-                left: -50px;
-                bottom: 12px;
+                left: -36px;
+                bottom: 11px;
                 background-color: $c-head;
                 z-index: 3;
             }
@@ -72,8 +75,8 @@
                 height: 1px;
                 width: 26px;
                 position: absolute;
-                left: 45px;
-                bottom: 12px;
+                left: 30px;
+                bottom: 11px;
                 background-color: $c-head;
                 z-index: 3;
             }
@@ -82,14 +85,33 @@
     &__text{
         font-family: 'Montserrat';
         font-size: 38px;
-        font-weight: 400;
-        margin: 25px 20px 25px 20px;
-        &--side{
+        font-weight: 500;
+        margin-top: 13px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        letter-spacing: .5px;
+        position: relative;
+        &::before{
+            content: 'ESTD';
             font-family: "Myriad Pro";
             font-size: 14px;
             font-weight: 400;
             color: $c-head;
             margin: 0;
+            position: absolute;
+            left: -40px;
+            bottom: 9px;
+        }
+        &::after{
+            content: '2001';
+            font-family: "Myriad Pro";
+            font-size: 14px;
+            font-weight: 400;
+            color: $c-head;
+            margin: 0;
+            position: absolute;
+            left: 225px;
+            bottom: 13.5px;
         }
     }
     &__tagline{
@@ -97,9 +119,11 @@
         font-size: 9px;
         font-weight: 400;
         margin: 0;
+        padding-left: 21.5px;
+        letter-spacing: 1px;
     }
     &__mouse{
-        margin-top: 110px;
+        margin-top: 106px;
         margin-bottom: 120px;
     }
 }
