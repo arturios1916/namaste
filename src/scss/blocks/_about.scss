@@ -44,10 +44,9 @@
     height: 100%;
     border: 1px solid #ececec;
     transition: .5s ease-in-out;
-    margin: 0;
     &__imgwrap{
         padding-top: 55px;
-        padding-bottom: 55px;
+        padding-bottom: 50px;
         height: 65px;
     }
     &__caption{
@@ -56,6 +55,9 @@
         font-size: 21px;
         color: $c-cardText;
         transition: .5s ease-in-out;
+    }
+    &__bigCaption{
+        padding-bottom: 37px;
     }
     &__img{
         width: 100%;
@@ -68,10 +70,10 @@
         font-family: 'PT Sans';
         font-size: 14px;
         font-weight: 700;
-        line-height: 1.6;
+        line-height: 1.7;
         color: $c-footer;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 76px;
         text-transform: none;
         transition: .5s ease-in-out;
     }

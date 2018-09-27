@@ -1,0 +1,85 @@
+.portfolio{
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    background-color: $c-card;
+    &__subcaption{
+        font-size: 12px;
+        font-weight: 700;
+        color: $c-third;
+        margin: 0;
+        padding-top: 5px;
+        padding-left: 10px;
+        letter-spacing: 4.5px;
+    }
+    &__caption{
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 4pt;
+        color: $c-primary;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
+    &__tagline{
+        font-family: 'PT Sans';
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 460px;
+        color: $c-seconary;
+        line-height: 1.7;
+        letter-spacing: 1.2px;
+    }
+    &__cardwrap{
+        margin-top: 84px;
+    }
+}
+
+.portfolio-card{
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        div {
+            left: 0;
+            background-color: rgba(22, 18, 24, 0.9);
+        }
+    }
+    &__hover{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        padding: 36.5px;
+        color: white;
+        background-color: rgba(22, 18, 24, 0);
+        left: -100%;
+        transition: 0.7s ease-in-out ;
+        box-sizing: border-box;
+        
+    }
+    &__caption{
+        font-family: 'Montserrat';
+        font-size: 21px;
+        font-weight: 500;
+        margin: 0;
+    }
+    &__description{
+        font-size: 11px;
+        font-weight: 400;
+        color: $c-primary;
+        letter-spacing: 2px;
+        padding-top: 8px;
+        display: block;
+    }
+    &__link{
+        background-color: transparent;
+        width: 65px;
+        height: 65px;
+        display: block;
+    }
+    &__button{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-top: 102px;
+        padding-left: 45px;
+    }
+}
