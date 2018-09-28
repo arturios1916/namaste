@@ -1,0 +1,119 @@
+.blog {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    &__subcaption {
+        font-size: 12px;
+        font-weight: 700;
+        color: $c-third;
+        margin: 0;
+        padding-top: 2px;
+        padding-right: 20px;
+        letter-spacing: 4.5px;
+    }
+
+    &__caption {
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 3.2pt;
+        color: $c-primary;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        padding-left: 10px;
+    }
+
+    &__tagline {
+        font-family: 'PT Sans';
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 530px;
+        color: $c-seconary;
+        line-height: 1.5;
+        letter-spacing: 1.6px;
+        padding-left: 70px;
+    }
+
+    &__cardwrap {
+        margin-top: 84px;
+    }
+}
+
+.blog-card{
+    background-color: $c-card;
+    border: 1px solid #ececec;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: linear-gradient(to bottom, rgba(247,247,247,0) 0%, rgba(247,247,247,0.35) 12%, rgba(247,247,247,1) 34%, rgba(247,247,247,1) 100%);
+
+    }
+    &:hover{
+        div {
+            top:0;
+        }
+        a {
+            opacity: 1;
+        }
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    &__hover{
+        padding: 0 26px 45px 26px;
+        background-color: $c-card;
+        transition: .5s ease-in-out;
+        position: absolute;
+        top: 155px;
+    }
+    &__caption{
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 45px;
+        letter-spacing: -0.5px;
+    }
+    &__description{
+        font-family: 'PT Sans';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        text-transform: none;
+        color: $c-footer;
+    }
+    &__date{
+        font-family: 'PT Sans';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+        color: #b6b6b6;
+        position: absolute;
+        left: 26px;
+        bottom: 12px;
+        z-index: 1;
+    }
+    &__link{
+        background-color: transparent;
+        width: 16px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        right: 25px;
+        bottom: 5px;
+        z-index: 1;
+        opacity: 0;
+        transition: .5s ease-in-out opacity;
+    }
+    &__button{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

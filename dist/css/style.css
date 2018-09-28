@@ -2895,9 +2895,14 @@ template {
   .nav__item {
     margin-right: 19px;
     margin-left: 19px; }
+    .nav__item:hover a {
+      color: #ed685a; }
   .nav__link {
     text-decoration: none;
-    color: #f0f0f0; }
+    color: #f0f0f0;
+    -webkit-transition: 0.2s ease-in-out color;
+    -o-transition: 0.2s ease-in-out color;
+    transition: 0.2s ease-in-out color; }
 
 .head {
   background-image: url("../img/head/background.png");
@@ -3132,6 +3137,8 @@ template {
   .portfolio-card:hover div {
     left: 0;
     background-color: rgba(22, 18, 24, 0.9); }
+  .portfolio-card:hover img {
+    opacity: 1; }
   .portfolio-card__hover {
     position: absolute;
     top: 0;
@@ -3162,13 +3169,206 @@ template {
     background-color: transparent;
     width: 65px;
     height: 65px;
-    display: block; }
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+    left: 82px; }
   .portfolio-card__button {
     display: block;
     width: 100%;
     height: auto;
-    padding-top: 102px;
-    padding-left: 45px; }
+    opacity: 0;
+    -webkit-transition: .5s ease-in opacity;
+    -o-transition: .5s ease-in opacity;
+    transition: .5s ease-in opacity; }
+
+.blog {
+  text-transform: uppercase;
+  font-family: 'Montserrat'; }
+  .blog__subcaption {
+    font-size: 12px;
+    font-weight: 700;
+    color: #898f99;
+    margin: 0;
+    padding-top: 2px;
+    padding-right: 20px;
+    letter-spacing: 4.5px; }
+  .blog__caption {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 3.2pt;
+    color: #ed685a;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-left: 10px; }
+  .blog__tagline {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 530px;
+    color: #999;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    padding-left: 70px; }
+  .blog__cardwrap {
+    margin-top: 84px; }
+
+.blog-card {
+  background-color: #f7f7f7;
+  border: 1px solid #ececec;
+  height: 420px;
+  overflow: hidden;
+  position: relative; }
+  .blog-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247, 0)), color-stop(12%, rgba(247, 247, 247, 0.35)), color-stop(34%, #f7f7f7), to(#f7f7f7));
+    background: -webkit-linear-gradient(top, rgba(247, 247, 247, 0) 0%, rgba(247, 247, 247, 0.35) 12%, #f7f7f7 34%, #f7f7f7 100%);
+    background: -o-linear-gradient(top, rgba(247, 247, 247, 0) 0%, rgba(247, 247, 247, 0.35) 12%, #f7f7f7 34%, #f7f7f7 100%);
+    background: linear-gradient(to bottom, rgba(247, 247, 247, 0) 0%, rgba(247, 247, 247, 0.35) 12%, #f7f7f7 34%, #f7f7f7 100%); }
+  .blog-card:hover div {
+    top: 0; }
+  .blog-card:hover a {
+    opacity: 1; }
+  .blog-card__img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .blog-card__hover {
+    padding: 0 26px 45px 26px;
+    background-color: #f7f7f7;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 155px; }
+  .blog-card__caption {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 45px;
+    letter-spacing: -0.5px; }
+  .blog-card__description {
+    font-family: 'PT Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: none;
+    color: #777; }
+  .blog-card__date {
+    font-family: 'PT Sans';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: #b6b6b6;
+    position: absolute;
+    left: 26px;
+    bottom: 12px;
+    z-index: 1; }
+  .blog-card__link {
+    background-color: transparent;
+    width: 16px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    right: 25px;
+    bottom: 5px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: .5s ease-in-out opacity;
+    -o-transition: .5s ease-in-out opacity;
+    transition: .5s ease-in-out opacity; }
+  .blog-card__button {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.footer {
+  background-color: #161218;
+  font-family: 'PT Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  text-transform: uppercase; }
+
+.footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .footer-nav__item + .footer-nav__item {
+    margin-top: 1px; }
+  .footer-nav__item {
+    display: block;
+    padding-left: 7px;
+    letter-spacing: 1px;
+    -webkit-transition: .2s ease color;
+    -o-transition: .2s ease color;
+    transition: .2s ease color; }
+    .footer-nav__item:hover {
+      color: #ed685a; }
+
+.contact {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .contact__link {
+    text-decoration: none;
+    color: #777;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease color;
+    -o-transition: 0.2s ease color;
+    transition: 0.2s ease color; }
+    .contact__link:hover {
+      color: #ed685a; }
+  .contact__item {
+    display: block;
+    padding-left: 17px;
+    letter-spacing: 0.9px; }
+  .contact__item + .contact__item {
+    margin-top: 1px; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 24px;
+  padding: 5px 0 0 17px; }
+  .social__item + .social__item {
+    padding-left: 22px; }
+  .social__link {
+    color: #777;
+    -webkit-transition: 0.2s ease color;
+    -o-transition: 0.2s ease color;
+    transition: 0.2s ease color; }
+    .social__link i {
+      -webkit-transition: .2s ease transform;
+      -o-transition: .2s ease transform;
+      transition: .2s ease transform; }
+    .social__link:hover {
+      color: #ed685a; }
+      .social__link:hover i {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+
+.copyright {
+  background-color: #161218;
+  color: #7b7a7b;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 54px; }
+  .copyright__item {
+    font-family: 'PT Sans';
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.8px; }
 
 @font-face {
   font-family: 'Myriad Pro';
@@ -3185,3 +3385,19 @@ template {
 .section-margin {
   padding-top: 140px;
   padding-bottom: 140px; }
+
+.section-margin-footer {
+  padding-top: 137px;
+  padding-bottom: 100px; }
+
+.download {
+  background-color: #ed685a;
+  color: white;
+  text-transform: uppercase;
+  padding: 23px 0 23px 0; }
+  .download__text {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2.14;
+    letter-spacing: 5.2px; }

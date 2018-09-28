@@ -41,6 +41,9 @@
             left: 0;
             background-color: rgba(22, 18, 24, 0.9);
         }
+        img{
+            opacity: 1;
+        }
     }
     &__hover{
         position: absolute;
@@ -74,12 +77,16 @@
         width: 65px;
         height: 65px;
         display: block;
+        position: absolute;
+        z-index: 2;
+        top: 180px;
+        left: 82px;
     }
     &__button{
         display: block;
         width: 100%;
         height: auto;
-        padding-top: 102px;
-        padding-left: 45px;
+        opacity: 0;
+        transition: .5s ease-in opacity;
     }
 }

@@ -13,10 +13,16 @@
     &__item{
         margin-right: 19px;
         margin-left: 19px;
+        &:hover{
+            a{
+                color: $c-primary;
+            }
+        }
     }
     &__link{
         text-decoration: none;
         color: $c-head;
+        transition: 0.2s ease-in-out color;
     }
 }
 
