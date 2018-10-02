@@ -1,15 +1,11 @@
 @import '_global';
-
-.download{
-    background-color: $c-primary;
-    color: white;
-    text-transform: uppercase;
-    padding: 23px 0 23px 0;
-    &__text{
-        font-family: 'Montserrat';
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 2.14;
-        letter-spacing: 5.2px;
-    }
+.container{
+    box-sizing: border-box;
 }
+
+.head[data-useragent*='MSIE 10.0'] {
+    background-image: url('../img/head/backgroundIE.png');
+    &:after{
+        display: none;
+    }
+  }

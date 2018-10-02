@@ -1,0 +1,83 @@
+@media screen and (max-width: 575px){
+    .section-margin{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-margin-footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .head{
+        &__text{
+            padding: 0;
+            &::before{
+                left: -50px;
+            }
+        }
+        &__tagline{
+            padding: 0;
+        }
+    }
+    .about{
+        &__caption{
+            font-size: 28px;
+        }
+        &__tagline{
+            max-width: 300px;
+            text-align: center;
+        }
+    }
+    .about-card{
+        &__caption{
+            font-size: 16px;
+        }
+        &__description{
+            font-size: 10px;
+            padding-bottom: 40px;
+        }
+    }
+    .portfolio{
+        &__caption{
+            font-size: 28px;
+        }
+        &__tagline{
+            max-width: 300px;
+            text-align: center;
+        }
+    }
+    .portfolio-card{
+        &__link{
+            top: 40%;
+            left: 35%;
+        }
+    }
+    .blog{
+        &__caption{
+            font-size: 28px;
+            text-align: center;
+        }
+        &__tagline{
+            max-width: 300px;
+            text-align: center;
+            padding: 0;
+        }
+    }
+    .download{
+        &__text{
+            letter-spacing: 0.1px;
+        }
+    }
+    .footer{
+        font-size: 9px;
+    }
+    .social{
+        font-size: 14px;
+        padding-left: 0;
+    }
+    .contact{
+        &__item{
+            padding: 0;
+        }
+    }
+}

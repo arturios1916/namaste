@@ -2923,8 +2923,7 @@ template {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 2; }
   .head__wrapper {
     z-index: 3;
@@ -3089,7 +3088,8 @@ template {
     text-transform: none;
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out; }
+    transition: .5s ease-in-out;
+    max-width: 100%; }
   .about-card:hover {
     background-color: #ed685a; }
     .about-card:hover h2, .about-card:hover span {
@@ -3172,8 +3172,8 @@ template {
     display: block;
     position: absolute;
     z-index: 2;
-    top: 180px;
-    left: 82px; }
+    top: 50%;
+    left: 40%; }
   .portfolio-card__button {
     display: block;
     width: 100%;
@@ -3382,6 +3382,9 @@ template {
   font-weight: 700;
   font-style: normal; }
 
+.section {
+  width: 100%; }
+
 .section-margin {
   padding-top: 140px;
   padding-bottom: 140px; }
@@ -3401,3 +3404,60 @@ template {
     font-weight: 700;
     line-height: 2.14;
     letter-spacing: 5.2px; }
+
+@media screen and (max-width: 575px) {
+  .section-margin {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .section-margin-footer {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .head__text {
+    padding: 0; }
+    .head__text::before {
+      left: -50px; }
+  .head__tagline {
+    padding: 0; }
+  .about__caption {
+    font-size: 28px; }
+  .about__tagline {
+    max-width: 300px;
+    text-align: center; }
+  .about-card__caption {
+    font-size: 16px; }
+  .about-card__description {
+    font-size: 10px;
+    padding-bottom: 40px; }
+  .portfolio__caption {
+    font-size: 28px; }
+  .portfolio__tagline {
+    max-width: 300px;
+    text-align: center; }
+  .portfolio-card__link {
+    top: 40%;
+    left: 35%; }
+  .blog__caption {
+    font-size: 28px;
+    text-align: center; }
+  .blog__tagline {
+    max-width: 300px;
+    text-align: center;
+    padding: 0; }
+  .download__text {
+    letter-spacing: 0.1px; }
+  .footer {
+    font-size: 9px; }
+  .social {
+    font-size: 14px;
+    padding-left: 0; }
+  .contact__item {
+    padding: 0; } }
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.head[data-useragent*='MSIE 10.0'] {
+  background-image: url("../img/head/backgroundIE.png"); }
+  .head[data-useragent*='MSIE 10.0']:after {
+    display: none; }

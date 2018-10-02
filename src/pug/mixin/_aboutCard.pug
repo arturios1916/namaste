@@ -1,5 +1,5 @@
 mixin aboutCard(img,caption,description, modified)
-    .about-card
+    div.js-item.about-card.revealator-slideup.revealator-once.revealator-delay
         div(class=modified+' about-card__imgwrap')
             img.about-card__img(src=img)
         h2.about-card__caption=caption

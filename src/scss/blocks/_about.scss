@@ -76,6 +76,7 @@
         padding-bottom: 76px;
         text-transform: none;
         transition: .5s ease-in-out;
+        max-width: 100%;
     }
     &:hover{
         background-color: $c-primary;
