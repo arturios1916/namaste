@@ -110,6 +110,9 @@
         z-index: 1;
         opacity: 0;
         transition: .5s ease-in-out opacity;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     &__button{
         display: block;
