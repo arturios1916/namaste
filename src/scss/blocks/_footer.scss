@@ -20,8 +20,9 @@
         padding-left: 7px;
         letter-spacing: 1px;
         transition: .2s ease color;
-        &:hover{
+        a:hover{
             color: $c-primary;
+            cursor: pointer;
         }
     }
 }

@@ -3172,8 +3172,8 @@ template {
     display: block;
     position: absolute;
     z-index: 2;
-    top: 50%;
-    left: 40%; }
+    top: calc(50% - 32.5px);
+    left: calc(50% - 32.5px); }
   .portfolio-card__button {
     display: block;
     width: 100%;
@@ -3310,8 +3310,9 @@ template {
     -webkit-transition: .2s ease color;
     -o-transition: .2s ease color;
     transition: .2s ease color; }
-    .footer-nav__item:hover {
-      color: #ed685a; }
+    .footer-nav__item a:hover {
+      color: #ed685a;
+      cursor: pointer; }
 
 .contact {
   list-style: none;
@@ -3443,8 +3444,18 @@ template {
     max-width: 300px;
     text-align: center;
     padding: 0; }
+  .blog-card__caption {
+    font-size: 14px; }
+  .blog-card__description {
+    font-size: 10px; }
+  .blog-card__link {
+    right: 10px; }
+  .blog-card__date {
+    font-size: 10px; }
   .download__text {
-    letter-spacing: 0.1px; }
+    letter-spacing: 0.1px;
+    text-align: center;
+    font-size: 12px; }
   .footer {
     font-size: 9px; }
   .social {
@@ -3452,6 +3463,11 @@ template {
     padding-left: 0; }
   .contact__item {
     padding: 0; } }
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0;
+    margin: 0; } }
 
 .container {
   -webkit-box-sizing: border-box;
