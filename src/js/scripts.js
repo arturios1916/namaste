@@ -26,7 +26,7 @@ $(document).ready(function(){
 Revealator.effects_padding  =  '-400' ;
 
 // browser detect
-var doc = document.getElementById('js-head');
+var doc = document.getElementById('js-browser');
 doc.setAttribute('data-useragent', navigator.userAgent);
 
 class Scroll {

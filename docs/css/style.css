@@ -3066,11 +3066,7 @@ template {
     color: #1b1b1b;
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    max-width: 100%;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto; }
+    transition: .5s ease-in-out; }
   .about-card__bigCaption {
     padding-bottom: 37px; }
   .about-card__img {
@@ -3407,7 +3403,8 @@ template {
   background-color: #ed685a;
   color: white;
   text-transform: uppercase;
-  padding: 23px 0 23px 0; }
+  text-align: center;
+  padding: 23px 20px 23px 20px; }
   .download__text {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -3482,7 +3479,14 @@ template {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.head[data-useragent*='MSIE 10.0'] {
+body[data-useragent*='MSIE 10.0'] .head {
   background-image: url("../img/head/backgroundIE.png"); }
-  .head[data-useragent*='MSIE 10.0']:after {
-    display: none; }
+
+body[data-useragent*='MSIE 10.0'] .head:after {
+  display: none; }
+
+body[data-useragent*='MSIE 10.0'] .about-card__caption {
+  max-width: 100%; }
+
+body[data-useragent*='Trident/7.0;'] .about-card__caption {
+  max-width: 100%; }

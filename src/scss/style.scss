@@ -3,9 +3,20 @@
     box-sizing: border-box;
 }
 
-.head[data-useragent*='MSIE 10.0'] {
-    background-image: url('../img/head/backgroundIE.png');
-    &:after{
+body[data-useragent*='MSIE 10.0'] {
+    .head{
+        background-image: url('../img/head/backgroundIE.png');
+    }
+    .head:after{
         display: none;
+    }
+    .about-card__caption{
+        max-width: 100%;
+    }
+  }
+
+body[data-useragent*='Trident/7.0;'] {
+    .about-card__caption{
+        max-width: 100%;
     }
   }
