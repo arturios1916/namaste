@@ -16,11 +16,38 @@ $(document).ready(function(){
         }
     
     });
-    //radius text(plugin)
-    $(".head__subcaption").arctext({
-        radius: 200,
-    })
+});
+
+//radius text(plugin)
+$(".head__subcaption").arctext({
+    radius: 200,
+})
+//hamburger 
+  var hamburger = document.querySelector(".hamburger");
+  var nav = document.querySelector(".nav");
+
+  hamburger.addEventListener("click", function() {
+      if (hamburger.classList.contains("is-active")) {
+        hamburger.classList.toggle("is-active");
+        nav.style='left:-100%;'
+      }
+      else {
+        hamburger.classList.toggle("is-active");
+        nav.style='left:0%;'
+      }
+
   });
+
+//screen width detect
+var el =  document.querySelector(".js-hamburger");
+window.onresize = function(){
+    if (window.outerWidth <= 575) {
+        el.classList.add('align-self-end');
+    }
+    else if (window.outerWidth >= 576 && el.classList.contains('align-self-end')) {
+        el.classList.remove('align-self-end');
+    }
+}
 
 //blocks animation
 Revealator.effects_padding  =  '-400' ;

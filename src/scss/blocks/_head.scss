@@ -10,6 +10,7 @@
     z-index: 3;
     padding: 0;
     letter-spacing: 1.5px;
+    transition: .5s ease-in-out left;
     &__item{
         margin-right: 19px;
         margin-left: 19px;
