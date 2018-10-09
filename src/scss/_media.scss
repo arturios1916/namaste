@@ -12,6 +12,15 @@
         display: block;
     }
 
+    .loader__text{
+        font-size: 32px;
+        margin-top: 3.5px;
+        top: 45%;
+    }
+    .loader__ring{
+        top: 35%;
+    }
+
     .nav{
         position: absolute;
         left: -100%;

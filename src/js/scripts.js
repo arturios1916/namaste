@@ -16,7 +16,69 @@ $(document).ready(function(){
         }
     
     });
+    // $(".loader").css('opacity', '0').css('background-color', 'transparent');
+    // function loaderDisp(){
+    //     $('.loader').css('display', 'none');
+    //     console.log('yes');
+    //   }
+    // setTimeout(loaderDisp, 3000);
+
 });
+
+
+var
+        images = document.images,
+        images_total_count = images.length,
+        images_loaded_count = 0,
+        total_count = images_total_count,
+        loaded_count = 0;
+        function animation() {
+            setTimeout(function () {
+                var loader = '.loader';
+                var text = '.loader__text';
+                var ring = '.loader__ring';
+                $(text).animate({left: "-100%"}, 600)
+                $(ring).animate(
+                    {
+                    position: "absolute",
+                    right: "-100%"
+                }, 600)
+                $(loader).animate({
+                    opacity: "0"
+                }, 400);
+            setTimeout(() => {
+                $(loader).css('display','none');
+            }, 1800);
+          
+        }, 3000);
+        }
+    if(images_total_count>0){
+      for (var i = 0; i < images_total_count; i++) {
+          var image_clone = new Image();
+            image_clone.onload = loaded();
+            image_clone.onerror = loaded();
+            image_clone.src = images[i].src
+            console.log('3');
+      }   
+      function loaded(){
+            loaded_count++;
+            if(loaded_count >= total_count*2){
+                console.log(total_count);
+                console.log(loaded_count)
+                animation();
+          }
+      }
+    }
+    else{
+      setTimeout(function () {
+        var preloader = $('.loader');
+        console.log('2');
+              $(preloader).css('opacity', '0').css('background-color', 'transparent');
+              setTimeout(() => {
+                $(preloader).css('display','none')
+              }, 1800);
+              
+          }, 1000);}
 
 //radius text(plugin)
 $(".head__subcaption").arctext({
@@ -40,6 +102,9 @@ $(".head__subcaption").arctext({
 
 //screen width detect
 var el =  document.querySelector(".js-hamburger");
+if (window.outerWidth <= 575) {
+    el.classList.add('align-self-end');
+}
 window.onresize = function(){
     if (window.outerWidth <= 575) {
         el.classList.add('align-self-end');

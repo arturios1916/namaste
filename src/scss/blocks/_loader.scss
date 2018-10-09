@@ -1,0 +1,52 @@
+.loader{
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    opacity: 1;
+    z-index: 5;
+    color: $c-primary;
+    overflow: hidden;
+    &__wrapper{
+        height: 100vh;
+    }
+    &__ring {
+        display: block;
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        &:after {
+          content: " ";
+          display: block;
+          width: 46px;
+          height: 46px;
+          margin: 1px;
+          border-radius: 50%;
+          border: 5px solid $c-primary;
+          border-color: $c-primary transparent $c-primary transparent;
+          animation: loader-ring 1.2s linear infinite;
+        }
+
+    }
+    &__text{
+        font-family: 'Montserrat';
+        font-size: 68px;
+        font-weight: 500;
+        margin-top: 13px;
+        margin-bottom: 20px;
+        letter-spacing: .5px;
+        color: inherit;
+        position: absolute;
+        top: 55%;
+    }
+  }
+  @keyframes loader-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

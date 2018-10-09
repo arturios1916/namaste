@@ -1,0 +1,35 @@
+.loader {
+  display: block;
+  width: 100vw;
+  height: 100vh; }
+  .loader__ring {
+    display: inline-block;
+    width: 64px;
+    height: 64px; }
+    .loader__ring:after {
+      content: " ";
+      display: block;
+      width: 46px;
+      height: 46px;
+      margin: 1px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      border-color: #fff transparent #fff transparent;
+      -webkit-animation: lds-dual-ring 1.2s linear infinite;
+      animation: lds-dual-ring 1.2s linear infinite; }
+
+@-webkit-keyframes loader-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
