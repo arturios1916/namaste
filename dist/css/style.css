@@ -3269,8 +3269,11 @@ template {
     display: block;
     position: absolute;
     z-index: 2;
-    top: calc(50% - 32.5px);
-    left: calc(50% - 32.5px); }
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .portfolio-card__button {
     display: block;
     width: 100%;
@@ -3615,6 +3618,9 @@ template {
     font-weight: 700;
     line-height: 2.14;
     letter-spacing: 5.2px; }
+  .download__link {
+    text-decoration: none;
+    color: inherit; }
 
 @media screen and (max-width: 575px) {
   .section-margin {
@@ -3665,9 +3671,6 @@ template {
   .portfolio__tagline {
     max-width: 300px;
     text-align: center; }
-  .portfolio-card__link {
-    top: 40%;
-    left: 35%; }
   .blog__caption {
     font-size: 28px;
     text-align: center; }
@@ -3698,7 +3701,9 @@ template {
 @media screen and (max-width: 320px) {
   .container {
     padding: 0;
-    margin: 0; } }
+    margin: 0; }
+  .portfolio-card__hover {
+    padding: 20px; } }
 
 .container {
   -webkit-box-sizing: border-box;

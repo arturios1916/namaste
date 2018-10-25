@@ -16,16 +16,9 @@ $(document).ready(function(){
         }
     
     });
-    // $(".loader").css('opacity', '0').css('background-color', 'transparent');
-    // function loaderDisp(){
-    //     $('.loader').css('display', 'none');
-    //     console.log('yes');
-    //   }
-    // setTimeout(loaderDisp, 3000);
-
 });
 
-
+//loader 
 var
         images = document.images,
         images_total_count = images.length,
@@ -55,16 +48,13 @@ var
     if(images_total_count>0){
       for (var i = 0; i < images_total_count; i++) {
           var image_clone = new Image();
-            image_clone.onload = loaded();
-            image_clone.onerror = loaded();
+            image_clone.addEventListener("load", loaded())
+            image_clone.addEventListener("error", loaded());
             image_clone.src = images[i].src
-            console.log('3');
       }   
       function loaded(){
             loaded_count++;
-            if(loaded_count >= total_count*2){
-                console.log(total_count);
-                console.log(loaded_count)
+            if(loaded_count >= total_count){
                 animation();
           }
       }
@@ -72,7 +62,6 @@ var
     else{
       setTimeout(function () {
         var preloader = $('.loader');
-        console.log('2');
               $(preloader).css('opacity', '0').css('background-color', 'transparent');
               setTimeout(() => {
                 $(preloader).css('display','none')
@@ -121,6 +110,7 @@ Revealator.effects_padding  =  '-400' ;
 var doc = document.getElementById('js-browser');
 doc.setAttribute('data-useragent', navigator.userAgent);
 
+// scroll 
 class Scroll {
     constructor (el) {
         this._el = el;

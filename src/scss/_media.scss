@@ -74,12 +74,12 @@
             text-align: center;
         }
     }
-    .portfolio-card{
-        &__link{
-            top: 40%;
-            left: 35%;
-        }
-    }
+    // .portfolio-card{
+    //     &__link{
+    //         top: 40%;
+    //         left: 35%;
+    //     }
+    // }
     .blog{
         &__caption{
             font-size: 28px;
@@ -130,5 +130,10 @@
 .container{
     padding: 0;
     margin: 0;
+}
+.portfolio-card{
+    &__hover{
+        padding: 20px;
+    }
 }
 }
