@@ -136,4 +136,16 @@
         padding: 20px;
     }
 }
+.head{
+    &__text{
+        &::after{
+            left: 215px;
+        }
+    }
+}
+.contact{
+    &__item{
+        padding-left: 5px;
+    }
+}
 }
